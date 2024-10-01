@@ -71,6 +71,7 @@ border: 1px solid var(--border-color);
 padding: var(--padding-aside);
 background-color: var(--bg-color);
 text-align: center;
+position: relative;
 }
 
 aside img {
@@ -81,8 +82,8 @@ box-shadow: var(--box-shadow-main-img);
 
 aside h2 {
   position: absolute; /* Change to absolute positioning */
-  top: 695px; 
-  left: 80px; 
+  top: 22px; 
+  left: 65px; 
   color: white; /* Ensure the text is readable */
   background-color: rgba(0, 0, 0, 0.5); 
   padding: 5px; 
