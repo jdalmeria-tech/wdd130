@@ -1,54 +1,76 @@
+:root {
+  --main-color: steelblue;
+  --white: white;
+  --transparent: transparent;
+  --border-color: rgba(0, 0, 0, 0.2);
+  --bg-color: #eee;
+  --text-color: #333;
+  --shadow-color: gray;
+  --border-top-color: #000;
+  --padding-small: 10px;
+  --padding-medium: 20px;
+  --width-main-img: 150px;
+  --width-aside-img: 200px;
+  --max-width-main: 840px;
+  --width-aside: 20rem;
+  --margin-aside: 1rem;
+  --padding-aside: 1rem;
+  --padding-main-img: 2px;
+  --margin-top-footer: 15px;
+  --box-shadow-main-img: 0 0 30px var(--shadow-color);
+}
+
 nav {
-  background-color: steelblue;
-  padding: 10px;
-  color: transparent;
+background-color: var(--main-color);
+padding: var(--padding-small);
+color: var(--transparent);
 }
 
 nav a {
-  color: white;
-  display: block;
-  padding: 20px;
-  background-color: transparent;
+color: var(--white);
+display: block;
+padding: var(--padding-medium);
+background-color: var(--transparent);
 }
 
 h1 {
-  color: steelblue;
-  background-color: transparent;
+color: var(--main-color);
+background-color: var(--transparent);
 }
 
 main img {
-  width: 150px;
-  height: auto;
-  border: 1px solid steelblue;
-  padding: 2px;
-  box-shadow: 0 0 30px gray;
+width: var(--width-main-img);
+height: auto;
+border: 1px solid var(--main-color);
+padding: var(--padding-main-img);
+box-shadow: var(--box-shadow-main-img);
 }
 
 p {
-  padding: 0;
+padding: 0;
 }
 
 main {
-  max-width: 840px;
+max-width: var(--max-width-main);
 }
 
 aside {
-  width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
-  text-align: center;
+width: var(--width-aside);
+margin: var(--margin-aside);
+border: 1px solid var(--border-color);
+padding: var(--padding-aside);
+background-color: var(--bg-color);
+color: var(--text-color);
+text-align: center;
 }
 
 aside img {
-  width: 200px;
-  height: auto;
+width: var(--width-aside-img);
+height: auto;
 }
 
 footer {
-  margin-top: 15px;
-  border-top: 1px solid #000;
-  text-align: center;
+margin-top: var(--margin-top-footer);
+border-top: 1px solid var(--border-top-color);
+text-align: center;
 }
