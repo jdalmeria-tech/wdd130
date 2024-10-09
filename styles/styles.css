@@ -11,8 +11,8 @@
   --padding-medium: 20px;
   --width-main-img: 150px;
   --width-aside-img: 200px;
-  --max-width-main: 840px;
-  --width-aside: 20em;
+  --max-width-header-footer: 840px;
+  --width-aside: 20rem;
   --margin-aside: 1rem;
   --padding-aside: 1rem;
   --padding-main-img: 2px;
@@ -28,8 +28,11 @@
 
 nav {
 background-color: var(--main-color);
-padding: var(--padding-small);
+padding: 1rem;
 color: var(--transparent);
+display: flex;
+justify-content: space-evenly;
+align-items: center;
 }
 
 nav a {
@@ -37,6 +40,9 @@ color: var(--white);
 display: block;
 padding: var(--padding-medium);
 background-color: var(--transparent);
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
 }
 
 h1 {
@@ -50,6 +56,7 @@ width: var(--width-main-img);
 height: auto;
 border: 1px solid var(--main-color);
 padding: var(--padding-main-img);
+margin-top: 1rem;
 margin-left: 1rem;
 box-shadow: var(--box-shadow-main-img);
 float: right;
@@ -60,13 +67,21 @@ padding: 0;
 margin: 1rem;
 }
 
+header, .grid, footer {
+max-width: var(--max-width-header-footer);
+margin: 0 auto;
+}
+
 main {
-max-width: var(--max-width-main);
+  grid-column: 2/3;
+  margin: 1rem;
 }
 
 aside {
 width: var(--width-aside);
-margin: var(--margin-aside);
+position: relative;
+grid-column: 1/2;
+grid-row: 1/2;
 border: 1px solid var(--border-color);
 padding: var(--padding-aside);
 background-color: var(--bg-color);
@@ -109,4 +124,16 @@ text-align: center;
 
 .indent {
   padding-left: 2rem;
+}
+
+.line {
+  border: none; /* Remove default styling */
+  border-top: 1px solid var(--main-color); /* Adjust color and thickness */
+  margin-top: 10px; /* Space between heading and line */
+  margin-bottom: 10px;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
 }
