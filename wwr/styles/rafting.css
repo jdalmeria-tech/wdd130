@@ -59,6 +59,12 @@ body {
   margin: 0 auto;
 }
 
+figure{
+  font-family:'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
 footer{
   display: flex;
   justify-content: space-between;
