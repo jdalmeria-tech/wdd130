@@ -123,14 +123,14 @@ nav.menubar {
   text-decoration: none;
   color: #dddee9;
   padding: 25px;
-  margin: 0 auto
+  margin: 0 auto;
   flex: 1 1 100%;
   font-family: 'Tinos', serif;
   font-weight: bold;
   font-size: larger;
 }
 
-.menubar a:hover, .navigation-bottom a:hover {
+.menubar a:hover {
 	color: var(--accent-color-1);
 	font-weight: bolder;
 	text-decoration: underline;
