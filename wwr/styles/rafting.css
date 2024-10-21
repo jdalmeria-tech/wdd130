@@ -79,7 +79,7 @@ footer{
 }
 
 footer > p {
-  font-size: 14px;
+  font-size: clamp(9px, 2vw, 14px);
   font-family: 'Roboto', sans-serif;
   color: black;
   font-weight: 500;
@@ -127,7 +127,7 @@ nav.menubar {
   flex: 1 1 100%;
   font-family: 'Tinos', serif;
   font-weight: bold;
-  font-size: larger;
+  font-size: clamp(9px, 2vw, 20px);
 }
 
 .menubar a:hover {
@@ -227,7 +227,7 @@ nav.menubar {
   flex: 1 1 100%;
   font-family: 'Tinos', serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: clamp(9px, 2vw, 18px);
 }
 
 .navigation-bottom a:hover {
