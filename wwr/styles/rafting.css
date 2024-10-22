@@ -235,3 +235,9 @@ nav.menubar {
 	font-weight: bolder;
 	text-decoration: underline;
 }
+
+/* Contact.html css */
+section.contact-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr)
+}
