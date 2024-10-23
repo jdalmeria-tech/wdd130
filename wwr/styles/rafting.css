@@ -242,7 +242,7 @@ div.map {
 div.map > iframe { 
   width: 420px;
   height: 450px;
-  border: none; /* Correct way to remove border */
+  border: none; /* remove border */
 }
 
 
