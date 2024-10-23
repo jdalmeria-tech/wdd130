@@ -296,8 +296,7 @@ div.contact-form {
   margin-bottom: 1.5rem;
 }
 
-.contact-form .form-item input[type="radio"],
-.contact-form .form-item input[type="checkbox"] {
+.contact-form .form-item input {
   margin-right: 10px; /* Space between input and label */
 }
 
