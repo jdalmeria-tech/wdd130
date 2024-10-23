@@ -246,14 +246,18 @@ div.contact-form {
   justify-items: center;
   margin-right: 2rem;
   padding: 1rem;
+  font-family: 'Roboto', sans-serif;
   border: solid var(--primary-color);
+  font-weight: 500;
   border-radius: 10px;
   border-width: 100%;
   grid-column: 4 / 5;
   grid-row: span 2;
+  background-color: whitesmoke;
 }
 
 .contact-form h2 {
+  font-family: 'Tinos', serif;
   font-size: 1.5rem;
   color: var(--secondary-color);
   text-align: center;
@@ -267,6 +271,33 @@ div.contact-form {
   margin-bottom: 1rem;
   width: 100%;
   box-sizing: border-box;
+}
+
+.contact-form legend {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.contact-form button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: var(--primary-color);
 }
 
 div.gallery {
