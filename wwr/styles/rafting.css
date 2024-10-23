@@ -56,7 +56,7 @@ p {
 }
 
 body {
-  max-width: 1220px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -69,9 +69,9 @@ figure{
 footer{
   margin: 1rem auto;
 	display: grid;
-	grid-template-columns: 2fr 2fr 1fr;
+	grid-template-columns: 2fr 2fr;
 	align-items: center;
-  justify-items: center;
+  justify-items: space-between;
 	border-bottom: 2px solid #ccc;
 	max-width: 100%;
   background-color: var(--accent-color-2);
@@ -84,7 +84,8 @@ footer > p {
   color: black;
   font-weight: 500;
   margin: 10px;
-  text-align: center;
+  display: flex;
+  align-items: left;
 }
 
 /* Class Selectors */
@@ -97,8 +98,9 @@ footer > p {
 .sociallinks {
   display: flex;
   gap: 10px; /* Adjust the gap between the social icons if needed */
-  justify-content: center;
+  justify-content: right;
   align-items: center;
+  margin: 10px;
 }
 
 .sociallinks a {
@@ -220,24 +222,64 @@ nav.menubar {
   width: 100%; /* Ensures images take up full width of their grid cell */
 }
 
-.navigation-bottom a{
-  text-decoration: none;
-  color: black;
-  padding: 10px;
-  flex: 1 1 100%;
-  font-family: 'Tinos', serif;
-  font-weight: 400;
-  font-size: clamp(9px, 2vw, 18px);
-}
-
-.navigation-bottom a:hover {
-	color: var(--secondary-color);
-	font-weight: bolder;
-	text-decoration: underline;
-}
 
 /* Contact.html css */
-section.contact-header {
+div.contact-header {
   display: grid;
-  grid-template-columns: repeat(3, 1fr)
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: repeat(2, .5fr);
+  grid-gap: 0.5rem; 
+  margin: .7rem;
+  color: var(--primary-color);
+}
+
+div.map {
+  grid-column: 1 / 2;
+}
+
+div.contact-info {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+div.contact-form {
+  justify-items: center;
+  margin-right: 2rem;
+  padding: 1rem;
+  border: solid var(--primary-color);
+  border-radius: 10px;
+  border-width: 100%;
+  grid-column: 4 / 5;
+  grid-row: span 2;
+}
+
+.contact-form h2 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-form fieldset {
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+div.gallery {
+  display: grid;
+  grid-column: span 2;
+  grid-template-columns: repeat(3, .5fr);
+  margin-top: 1.5rem;
+  background-color: var(--accent-color-1);
+  border: solid var(--primary-color);
+  color: var(--secondary-color);
+  
+}
+.gallery img {
+  width: 100%;
+  box-shadow: 0 0 20px var(--primary-color);
 }
