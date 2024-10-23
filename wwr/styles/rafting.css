@@ -108,7 +108,10 @@ footer > p {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: black;
+  font-family: 'Roboto', sans-serif;
 }
+
 .sociallinks img {
   width: 25px;
   margin: 2.5px;
@@ -132,7 +135,7 @@ nav.menubar {
   font-size: clamp(9px, 2vw, 20px);
 }
 
-.menubar a:hover {
+.menubar a:hover, .sociallinks a:hover {
 	color: var(--accent-color-1);
 	font-weight: bolder;
 	text-decoration: underline;
