@@ -4,7 +4,7 @@
   --accent-color-1: #F3EDE2;
   --accent-color-2: #5E91B2;
 }
-
+/* General rules for header and footer */
 header {
 	margin: 1rem auto;
 	display: grid;
@@ -20,7 +20,7 @@ h2 {
   font-family: 'Tinos', serif;
   color: var(--secondary-color);
 }
-
+/* about.html css */
 div.hero > h1 {
   font-family: 'Tinos', serif;
   font-size: 4rem;
@@ -225,8 +225,7 @@ nav.menubar {
   width: 100%; /* Ensures images take up full width of their grid cell */
 }
 
-
-/* Contact.html css */
+/* contact.html css */
 div.contact-header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; 
