@@ -71,7 +71,7 @@ footer{
 	display: grid;
 	grid-template-columns: 2fr 2fr;
 	align-items: center;
-  justify-items: space-between;
+  justify-content: space-between;
 	border-bottom: 2px solid #ccc;
 	max-width: 100%;
   background-color: var(--accent-color-2);
@@ -85,7 +85,7 @@ footer > p {
   font-weight: 500;
   margin: 10px;
   display: flex;
-  align-items: left;
+  text-align: left;
 }
 
 /* Class Selectors */
@@ -265,7 +265,7 @@ div.contact-form {
   border: solid var(--primary-color);
   font-weight: 500;
   border-radius: 10px;
-  border-width: 100%;
+  border-width: 2px;
   grid-column: 4 / 5;
   grid-row: span 2;
   background-color: whitesmoke;
