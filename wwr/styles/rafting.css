@@ -21,7 +21,7 @@ h2 {
   color: var(--secondary-color);
 }
 
-h1 {
+div.hero > h1 {
   font-family: 'Tinos', serif;
   font-size: 4rem;
   color: var(--accent-color-1);
@@ -240,9 +240,21 @@ div.map {
   grid-column: 1 / 2;
 }
 
+div.map > iframe { 
+  width: 420px;
+  height: 450px;
+  border: none; /* Correct way to remove border */
+}
+
+
 div.contact-info {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+}
+
+div.contact-info > h1 {
+  font-family: 'Tinos', serif;
+  color: var(--secondary-color);
 }
 
 div.contact-form {
@@ -271,9 +283,22 @@ div.contact-form {
   border: 2px solid var(--primary-color);
   border-radius: 5px;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   width: 100%;
   box-sizing: border-box;
+  display: flex; /* Use flex to align items */
+  flex-direction: column; /* Stack items vertically */
+}
+
+.contact-form .form-item {
+  display: flex; /* Flexbox for aligning items */
+  align-items: center; /* Aligns vertically */
+  margin-bottom: 1.5rem;
+}
+
+.contact-form .form-item input[type="radio"],
+.contact-form .form-item input[type="checkbox"] {
+  margin-right: 10px; /* Space between input and label */
 }
 
 .contact-form legend {
@@ -281,11 +306,13 @@ div.contact-form {
   font-weight: 600;
 }
 
+.checkbox-container {
+  margin-top: 1rem;
+}
+
 .contact-form label {
-  display: block;
   font-size: 1rem;
   color: var(--primary-color);
-  margin-bottom: 0.5rem;
 }
 
 .contact-form button {
@@ -297,10 +324,14 @@ div.contact-form {
   border-radius: .5rem;
   cursor: pointer;
   transition: background-color 0.3s;
+  box-sizing: border-box;
+  letter-spacing: 5px;
 }
 
 .contact-form button:hover {
   background-color: var(--primary-color);
+  font-weight: bolder;
+
 }
 
 div.gallery {
