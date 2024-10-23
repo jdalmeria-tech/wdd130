@@ -5,10 +5,6 @@
   --accent-color-2: #5E91B2;
 }
 
-header, main, footer {
-  width: 100%;
-}
-
 header {
 	margin: 1rem auto;
 	display: grid;
@@ -62,8 +58,6 @@ p {
 body {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 15px;
-  box-sizing: border-box;
 }
 
 figure{
