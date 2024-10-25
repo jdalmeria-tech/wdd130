@@ -348,3 +348,36 @@ div.gallery {
   width: 100%;
   box-shadow: 0 0 20px var(--primary-color);
 }
+
+/* Trips page */
+/* table */
+.table-container {
+  margin: 20px; /* Add margin for spacing */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Ensure borders are collapsed */
+}
+
+th, td {
+  padding: 10px; /* Add padding for better spacing */
+  border: 1px solid var(--secondary-color); /* Border color */
+}
+
+th {
+  background-color: var(--accent-color-1); /* Header background color */
+  color: var(--secondary-color); /* Header text color */
+  font-family: 'Tinos', serif;
+}
+
+td {
+  text-align: left; /* Align all text to the left */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+td:nth-child(4) {
+  text-align: center; /* Center align for the price column */
+}
