@@ -28,8 +28,9 @@ div.hero > h1 {
   position: absolute;
   display: block;
   top: 0;
-
 }
+
+div.hero 
 
 article {
   position: absolute;
@@ -250,7 +251,7 @@ div.contact-info {
   grid-row: 1 / 2;
 }
 
-div.contact-info > h1, div.image-trips-container h1 {
+div.contact-info h1, div.image-trips-container h1 {
   font-family: 'Tinos', serif;
   color: var(--secondary-color);
   font-size: 2.5rem;
@@ -313,7 +314,7 @@ div.contact-form {
   color: var(--primary-color);
 }
 
-.contact-form button, .book-button {
+.contact-form button, .book-button, .newsletter-form button {
   background-color: white;
   color: var(--secondary-color);
   border: 2px solid var(--secondary-color);
@@ -327,7 +328,7 @@ div.contact-form {
   letter-spacing: 5px;
 }
 
-.contact-form button:hover, .book-button:hover {
+.contact-form button:hover, .book-button:hover, .newsletter-form button:hover {
   color: white;
   background-color: var(--secondary-color);
   font-weight: bolder;
@@ -529,4 +530,140 @@ td:nth-child(4) {
   th, td {
     font-size: 0.8rem;
   }
+}
+
+/* home page */
+div.home-container {
+  display: grid;
+  grid-template-columns: repeat(2, .5fr);
+  grid-template-rows: .9fr .5fr;
+  grid-gap: 1rem;
+}
+
+div.first-container {
+  grid-column: span 2;
+  justify-items: center;
+  align-content: center;
+  background-image: url('../images/home-hero.jpg');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+div.first-container h1 {
+  font-family: 'Tinos', serif;
+  color: var(--accent-color-1);
+  letter-spacing: 5px;
+  font-weight: 800;
+  font-size: 3rem;
+  text-shadow: 
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  2px  2px 0 #000;
+  margin-bottom: 0;
+}
+
+div.first-container p {
+  color: var(--accent-color-1);
+  font-weight: 700;
+  font-size: larger;
+  border: 0;
+  text-shadow: 
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  2px  2px 0 #000;
+}
+
+/* images in home page */
+
+div.second-container img,
+div.third-container img {
+  border: .4rem solid var(--primary-color);
+  box-shadow: 0 0 30px var(--primary-color);
+  border-radius: 10px;
+  width: 70%;
+  height: auto;
+}
+
+div.second-container {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  padding: 1rem;
+}
+
+div.second-container p {
+  margin-top: 2rem;
+}
+
+div.third-container {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  padding: 1rem;
+}
+
+div.fourth-container {
+  grid-column: 1 / 2;
+
+  border-radius: 5px;
+  justify-items: center;
+  align-content: center;
+}
+
+div.fourth-container h2 {
+  margin-bottom: 3.5rem;
+}
+
+div.fourth-container a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+div.fourth-container img {
+  width: 100px;
+}
+
+/* newsletter form */
+div.newsletter-form {
+  grid-column: 2 /3;
+  grid-row: 3 / 4;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 1.5rem;
+}
+
+.newsletter-form h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.newsletter-form p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.newsletter-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-form label {
+  margin-bottom: 5px;
+}
+
+.newsletter-form input {
+  padding: 8px;
+  margin-bottom: 15px;
+  width: 250px;
+}
+
+.newsletter-form p:last-of-type {
+  font-size: 12px;
+  margin-top: 15px;
 }
