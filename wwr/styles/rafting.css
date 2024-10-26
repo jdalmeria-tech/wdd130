@@ -30,8 +30,6 @@ div.hero > h1 {
   top: 0;
 }
 
-div.hero 
-
 article {
   position: absolute;
   background-color: rgba(243, 237, 226, 0.8);
@@ -45,10 +43,11 @@ article img {
   margin-left: 1rem;
 }
 
-article p {
+article h3 {
   color: var(--secondary-color);
   margin: 1rem;
   font-weight: 700;
+  font-family: 'Roboto', sans-serif;
 }
 
 p {
