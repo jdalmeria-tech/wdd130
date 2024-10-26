@@ -361,7 +361,7 @@ div.trip-container {
 div.image-trips-container {
   display: grid;
   grid-template-columns: repeat(2, .8fr);
-  grid-template-rows: repeat(2, .5fr);
+  grid-template-rows: repeat(2, .4fr);
   grid-gap: .1rem;
   grid-row: span 2;
   margin: 0 auto;
@@ -372,11 +372,17 @@ div.image-trips-container {
 .image-trips-container h1 {
   grid-column: 1 / -1; /* Span the heading across all columns */
   text-align: center; /* Center-align the text */
+  font-size: 2rem;
 }
 
 div.image-trips-container img {
+  border: 4px solid black;
   border-radius: 10px;
   width: 250px;
+}
+
+div.image-trips-container p {
+  font-weight: 400;
 }
 
 div.feedback-container {
@@ -440,4 +446,87 @@ td {
 
 td:nth-child(4) {
   text-align: center; /* Center align for the price column */
+}
+
+/* for mobile responsiveness */
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  /* 1. Stack main container columns vertically */
+  div.trip-container {
+    grid-template-columns: 1fr; /* Single-column layout */
+    grid-template-rows: auto;
+  }
+
+  /* 2. Single-column layout for images */
+  .image-trips-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 1rem;
+  }
+
+  /* 3. Reduce heading font size */
+  .image-trips-container h1 {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+
+  /* 4. Full-width images */
+  div.image-trips-container img {
+    width: 100%; /* Full width for smaller screens */
+    max-width: 300px;
+  }
+
+  /* 5. Feedback image adjustments for mobile */
+  div.feedback-content img {
+    width: 100%; /* Set image to full width */
+    max-width: 250px; /* Max width */
+    margin: 0 auto 1rem auto; /* Center image and add spacing */
+    float: none; /* Remove float on mobile */
+    display: block;
+  }
+
+  /* 6. Feedback text full width */
+  div.feedback-content p {
+    max-width: 100%;
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  /* 7. Full-width table container */
+  div.table-container {
+    margin: 1rem auto;
+    width: 100%; /* Full width on mobile */
+  }
+
+  /* 8. Reduce padding and font size in table */
+  th, td {
+    padding: 5px; /* Less padding for smaller screens */
+  }
+
+  table {
+    font-size: 0.9rem; /* Smaller font for mobile */
+  }
+}
+
+/* Additional adjustments for extra small screens (480px) */
+@media (max-width: 480px) {
+  /* 9. Reduce heading font size further */
+  .image-trips-container h1 {
+    font-size: 1.2rem;
+  }
+
+  /* 10. Reduce padding in feedback container */
+  div.feedback-container {
+    padding: 1rem;
+  }
+
+  /* 11. Further reduce feedback text size */
+  div.feedback-content p {
+    font-size: 0.9rem;
+  }
+
+  /* 12. Smaller font in table cells */
+  th, td {
+    font-size: 0.8rem;
+  }
 }
